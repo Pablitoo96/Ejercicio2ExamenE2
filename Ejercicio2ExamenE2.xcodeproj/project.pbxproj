@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		9B52736E2B73A17F004DDA9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B52736C2B73A17F004DDA9C /* LaunchScreen.storyboard */; };
 		9B5273792B73A180004DDA9C /* Ejercicio2ExamenE2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5273782B73A180004DDA9C /* Ejercicio2ExamenE2Tests.swift */; };
 		9B5273842B73A180004DDA9C /* Ejercicio2ExamenE2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5273832B73A180004DDA9C /* Ejercicio2ExamenE2UITests.swift */; };
+		9B5273992B73A197004DDA9C /* Empresa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5273982B73A197004DDA9C /* Empresa.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9B52737F2B73A180004DDA9C /* Ejercicio2ExamenE2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ejercicio2ExamenE2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B5273832B73A180004DDA9C /* Ejercicio2ExamenE2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicio2ExamenE2UITests.swift; sourceTree = "<group>"; };
 		9B5273852B73A180004DDA9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B5273982B73A197004DDA9C /* Empresa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empresa.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		9B5273602B73A17E004DDA9C /* Ejercicio2ExamenE2 */ = {
 			isa = PBXGroup;
 			children = (
+				9B5273942B73A188004DDA9C /* modelos */,
 				9B5273612B73A17E004DDA9C /* AppDelegate.swift */,
 				9B5273632B73A17E004DDA9C /* SceneDelegate.swift */,
 				9B5273652B73A17E004DDA9C /* ViewController.swift */,
@@ -126,6 +129,14 @@
 				9B5273852B73A180004DDA9C /* Info.plist */,
 			);
 			path = Ejercicio2ExamenE2UITests;
+			sourceTree = "<group>";
+		};
+		9B5273942B73A188004DDA9C /* modelos */ = {
+			isa = PBXGroup;
+			children = (
+				9B5273982B73A197004DDA9C /* Empresa.swift */,
+			);
+			path = modelos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 9B5273552B73A17E004DDA9C;
+			packageReferences = (
+				9B5273A02B73AACC004DDA9C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 9B52735F2B73A17E004DDA9C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B5273662B73A17E004DDA9C /* ViewController.swift in Sources */,
+				9B5273992B73A197004DDA9C /* Empresa.swift in Sources */,
 				9B5273622B73A17E004DDA9C /* AppDelegate.swift in Sources */,
 				9B5273642B73A17E004DDA9C /* SceneDelegate.swift in Sources */,
 			);
@@ -587,6 +602,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9B5273A02B73AACC004DDA9C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 9B5273562B73A17E004DDA9C /* Project object */;
 }
